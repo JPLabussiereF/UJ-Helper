@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-black);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: var(--text-font);
+    color: var(--white);
+    gap: 1rem;
+}
+
+.footer__credits{
+    font-size: 1.2rem;
+}
+
+.footer__credits a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--text-font);
+}

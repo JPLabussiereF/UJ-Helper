@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("header.css");
+@import url("home.css");
+@import url("goal.css");
+@import url("semesters.css");
+@import url("notice.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("sistemas_eletricos.css");
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --background-cinza: #EBECEE;
+    --white: #fff;
+    --off-black: #333;
+    --title-font: 'Bebas Neue', sans-serif;
+    --text-font: Neutro, sans-serif;
+}
+
+body{
+    background-color: var(--background-cinza);
+    font-size: 1.6rem;
+    font-family: var(--text-font);
+    color: var(--off-black);
+}

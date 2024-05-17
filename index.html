@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unijorge Helper</title>
+    <link rel="icon" href="./assets/images/logo_unijorge.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="header__logo"
+          src="./assets/images/logo_unijorge.png"
+          alt="Logo da Unijorge"
+        />
+        <h2 class="header__title"><span>Uni</span>jorge Helper</h2>
+      </div>
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="menu__list">
+          <li class="menu__list__item">
+            <a href="https://www.unijorge.edu.br/" target="_blank"
+              ><i class="fa-solid fa-circle-check"></i>Site Oficial</a
+            >
+          </li>
+          <li class="menu__list__item">
+            <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#goal"><i class="fa-solid fa-bullseye"></i>Objetivo</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#semesters"><i class="fa-solid fa-book"></i>Semestres</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#notice"><i class="fa-solid fa-circle-info"></i>Avisos</a>
+          </li>
+          <li class="menu__list__item">
+            <a href="#contact"
+              ><i class="fa-solid fa-handshake-angle"></i>Contate-nos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="container desktop">
+        <ul class="menu__desktop">
+          <li class="menu__desktop__item">
+            <a href="https://www.unijorge.edu.br/" target="_blank"
+              ><i class="fa-solid fa-circle-check"></i>Site Oficial</a
+            >
+          </li>
+          <li class="menu__desktop__item">
+            <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li class="menu__desktop__item">
+            <a href="#goal"><i class="fa-solid fa-bullseye"></i>Objetivo</a>
+          </li>
+          <li class="menu__desktop__item">
+            <a href="#semesters"><i class="fa-solid fa-book"></i>Semestres</a>
+          </li>
+          <li class="menu__desktop__item">
+            <a href="#notice"><i class="fa-solid fa-circle-info"></i>Avisos</a>
+          </li>
+          <li class="menu__desktop__item">
+            <a href="#contact"
+              ><i class="fa-solid fa-handshake-angle"></i>Contate-nos</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="home__aux">
+        <h2 class="home__title">
+          <i class="fa-solid fa-house"></i>Quem somos?
+        </h2>
+        <p class="home__text">
+          Somos a <b>'Unijorge Helper'</b>, uma iniciativa dedicada a auxiliar e
+          orientar os estudantes da Universidade Jorge Amado em seus estudos!
+          Atualmente fazemos suporte apenas para o bacharelado em Engenharia da
+          Computação.
+        </p>
+        <img src="./assets/images/home_bg.jpg" alt="Estudantes " />
+      </div>
+    </section>
+    <section class="goal" id="goal">
+      <div class="goal__aux">
+        <h2 class="goal__title">
+          <i class="fa-solid fa-bullseye"></i>Nossa motivação
+        </h2>
+        <p class="goal__text">
+          Reconhecemos que muitos estudantes enfrentam desafios ao conciliar os
+          estudos com o trabalho, o que pode consumir até 8 horas diárias e
+          dificultar a revisão e o estudo extraclasse. Logo, também
+          compreendemos que esses alunos frequentemente têm apenas o horário do
+          almoço ou talvez uma hora após as aulas para revisar o conteúdo.
+          Assim, estamos aqui para tornar esse tempo mais produtivo e ajudá-los
+          a alcançar o sucesso acadêmico.
+        </p>
+        <img
+          src="./assets/images/rabiscos_de_ideias.jpg"
+          alt="Alguns rabiscos sobre ideias"
+        />
+        <p class="goal__text">
+          Com isso em mente, decidimos criar um site que direcione esses alunos
+          diretamente para aulas online, livros, cursos, entre outras coisas, as
+          quais cobrem os mesmos temas abordados em sala de aula.
+        </p>
+        <p class="goal__text">
+          Apresentamos uma interface intuitiva, organizada por semestres e suas
+          respectivas disciplinas.
+          <b>Convidamos você a explorar tudo o que temos a oferecer!</b>
+        </p>
+      </div>
+    </section>
+    <section class="semesters" id="semesters">
+      <div class="semesters__aux">
+        <h2 class="semesters__title">
+          <i class="fa-solid fa-book"></i>Semestres
+        </h2>
+
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <ul class="semesters__list">
+                <li class="semesters__list__title">
+                  1°
+                  <a href="#" class="disabled"
+                    >(Clique aqui para ser redirecionado)</a
+                  >
+                </li>
+                <li class="semesters__list__item">
+                  Interfaces de Sistemas Computacionais
+                </li>
+                <li class="semesters__list__item">
+                  Criatividade, Inovação e Experiência
+                </li>
+                <li class="semesters__list__item">
+                  Projeto Integrador em Avaliação de Problemas de Engenharia
+                </li>
+                <li class="semesters__list__item">
+                  Modelagem e Representação do Espaço
+                </li>
+                <li class="semesters__list__item">
+                  Leitura e Produção Acadêmica
+                </li>
+                <li class="semesters__list__item">
+                  Tecnologia Emergente e Protagonismo
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="semesters__list">
+                <li class="semesters__list__title">
+                  2°
+                  <a href="#" class="disabled"
+                    >(Clique aqui para ser redirecionado)</a
+                  >
+                </li>
+                <li class="semesters__list__item">Bases de Programação</li>
+                <li class="semesters__list__item">Análise Espacial</li>
+                <li class="semesters__list__item">Cálculo de uma Variável</li>
+                <li class="semesters__list__item">
+                  Engenharia: da Ideia à Concepção
+                </li>
+                <li class="semesters__list__item">
+                  Modelagem de Novos Negócios
+                </li>
+                <li class="semesters__list__item">Construção do Pensamento</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="semesters__list">
+                <li class="semesters__list__title">
+                  3°
+                  <a href="#" class="disabled"
+                    >(Clique aqui para ser redirecionado)</a
+                  >
+                </li>
+                <li class="semesters__list__item">Métodos Matemáticos</li>
+                <li class="semesters__list__item">
+                  Cálculo de Várias Variáveis
+                </li>
+                <li class="semesters__list__item">
+                  Eletricidade, Propagações Ondulatórias e Magnéticas
+                </li>
+                <li class="semesters__list__item">Fenômenos Mecânicos</li>
+                <li class="semesters__list__item">
+                  Algoritmos e Laboratório de Programação
+                </li>
+                <li class="semesters__list__item">Estruturas de Dados</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="semesters__list">
+                <li class="semesters__list__title">
+                  4°
+                  <a href="#" class="disabled"
+                    >(Clique aqui para ser redirecionado)</a
+                  >
+                </li>
+                <li class="semesters__list__item">
+                  Modelagem e Simulação Matemática
+                </li>
+                <li class="semesters__list__item">
+                  Programação de Sistemas Especialistas
+                </li>
+                <li class="semesters__list__item">
+                  Arquitetura, Organização e Funcionamento de Computadores e
+                  Sistemas Operacionais
+                </li>
+                <li class="semesters__list__item">
+                  Análise Orientada a Objetos
+                </li>
+                <li class="semesters__list__item">
+                  Estatística e Modelagem Multivariada
+                </li>
+                <li class="semesters__list__item">
+                  Programação Orientada a Objetos
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="semesters__list">
+                <li class="semesters__list__title">
+                  5° <a href="./src/pages/quinto_semestre/index.html">(Clique aqui para ser redirecionado)</a>
+                </li>
+                <li class="semesters__list__item">
+                  Grafos Aplicados à Computação
+                </li>
+                <li class="semesters__list__item">
+                  Modelagem e Implementação de Banco de Dados com SQL
+                </li>
+                <li class="semesters__list__item">
+                  Projeto e Implementação de Redes de Computadores
+                </li>
+                <li class="semesters__list__item">Projeto em Cyber Security</li>
+                <li class="semesters__list__item">
+                  Laboratório de Desenvolvimento de Software
+                </li>
+                <li class="semesters__list__item">
+                  <span class="disabled">Sistemas Digitais</span> Sistemas
+                  Elétricos
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="notice" id="notice">
+      <div class="notice__aux">
+        <h2 class="notice__title">
+          <i class="fa-solid fa-circle-info"></i>Avisos
+        </h2>
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <h2 class="notice__subtitle">Notas de Atualização</h2>
+              <ul class="notice__list">
+                <li class="notice__text">
+                  - Layout responsivo para telas de 428px e 768px no ar! -
+                  <span>12/05/2024</span>.
+                </li>
+                <li class="notice__text">
+                  - Estamos criando a página para o quinto semestre do curso de
+                  Engenharia da Computação - <span>11/05/2024</span>.
+                </li>
+                <li class="notice__text">
+                  - Estamos cientes que a a página de "contato" não está
+                  funcionando. Estamos trabalhando corrigir isso! -
+                  <span>11/05/2024</span>.
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="notice__subtitle">Comunicados</h2>
+              <p class="notice__text">
+                Atualmente, oferecemos suporte apenas para o quinto semestre do
+                curso de Engenharia da Computação, mas planejamos expandir nossa
+                cobertura para todos os dez semestres do curso.
+              </p>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact__aux">
+        <h2 class="contact__title">
+          <i class="fa-solid fa-handshake-angle"></i>Contate-nos
+        </h2>
+        <div class="contact__aux__1">
+          <div>
+            <p class="contact__text">
+              Se você tiver alguma dúvida, sugestão ou desejar entrar em contato
+              conosco:
+            </p>
+            <input
+              class="email"
+              type="email"
+              placeholder="Digite seu E-mail aqui..."
+            />
+            <input
+              class="text"
+              type="text"
+              placeholder="Digite sua mensagem aqui..."
+            />
+            <button class="contact__button" onclick="">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__credits">
+        Desenvolvido por
+        <a href="https://www.linkedin.com/in/joaolabussiere/" target="_blank"
+          >João Pedro Labussiere França</a
+        >
+        <a href="https://www.linkedin.com/in/joaolabussiere/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/JPLabussiereF" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </p>
+      <p class="footer__text">© 2024 UJ Helper. Todos direitos Reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 10,
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

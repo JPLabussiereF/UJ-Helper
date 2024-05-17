@@ -1,0 +1,87 @@
+.semesters{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.semesters__aux{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 1.6rem;
+}
+
+.semesters__title{
+    display: flex;
+    gap: .5rem;
+    font-size: 2.5rem;
+    color: #295687;
+    font-weight: 700;
+    font-family: var(--title-font);
+}
+
+.swiper-slide .semesters__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.semesters__list__item{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+    font-family: var(--text-font);
+    text-transform: capitalize;
+}
+
+.semesters__list__title{
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--black);
+    font-family: var(--text-font);
+}
+
+.semesters__list__title a{
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #EA3639;
+    font-family: var(--text-font);
+    text-decoration: none;
+}
+
+.semesters__list__title a.disabled, li .disabled{
+    color: #4e4e4e;
+    text-decoration: line-through;
+}
+
+.semesters__list__title a:hover{
+    text-decoration: underline;
+}
+
+.swiper{
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev, .swiper-button-next{
+   display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin-bottom: 1rem;
+}
+
+.semesters img{
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+}
+

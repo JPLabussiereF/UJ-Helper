@@ -1,0 +1,106 @@
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 1rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.header__logo{
+    width: 3.2rem;
+    height: auto;
+}
+
+.header__title{
+    color: #295687;
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+}
+
+.header__title span{
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+    color: #EA3639;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu__list{
+    display: none;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 40%;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.menu__list a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #295687;
+    border-bottom: .5px dotted #ff1414;
+}
+
+.container__botao:checked~.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container__botao{
+    display: none;
+}
+
+.menu__desktop, .container.desktop{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .fa-solid.fa-bars{
+        display: none;
+    }
+    .menu__desktop, .container.desktop{
+        display: flex;
+    }
+    ul.menu__desktop{
+        display: flex;
+        font-size: 1.3rem;
+        gap: 1rem;
+        padding-right: 1rem;
+    }
+    .menu__desktop .menu__desktop__item a{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: .2rem;
+        text-decoration: none;
+        color: #295687;
+        font-family: var(--text-font);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .menu__desktop .menu__desktop__item a:hover{
+        color: #EA3639;
+        border-bottom: .8px solid #ff1414;
+    }
+}
+
+@media (min-width:1024) {
+    
+}
